@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/testing"
+    tools:context=".activities.KulinerActivity">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/salad"
+            android:layout_toLeftOf="@id/textViewJudulKuliner"/>
+
+        <TextView
+            android:id="@+id/textViewJudulKuliner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="Kuliner Viral"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_edittext"
+        android:padding="15dp"
+        android:layout_gravity="center_vertical">
+
+    <EditText
+        android:id="@+id/editTextNamaKuliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="15sp"
+        android:hint="Nama Kuliner"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittext_shadow"
+        />
+
+    <EditText
+        android:id="@+id/editTextKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="15sp"
+        android:textSize="15dp"
+        android:hint="Keterangan"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_baseline_article_24"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittext_shadow"
+        />
+
+        <EditText
+            android:id="@+id/editTextKontributor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_shadow"
+            android:drawableStart="@drawable/ic_baseline_accessibility_24"
+            android:drawablePadding="10dp"
+            android:hint="Kontributor"
+            android:inputType="text"
+            android:padding="15sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTextLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15sp"
+            android:textSize="15dp"
+            android:hint="Latitude"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edittext_shadow"
+            />
+
+        <EditText
+            android:id="@+id/editTextLongtitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15sp"
+            android:textSize="15dp"
+            android:hint="Longtitude"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_baseline_add_location_alt_24"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edittext_shadow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_hover_1"
+            android:text="Open Map"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/buttonSimpan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_hover_1"
+            android:text="Simpan"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
